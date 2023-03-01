@@ -245,30 +245,3 @@
 #     for f in range(8):
 #         pen.forward(10)
 # turtle.done
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
