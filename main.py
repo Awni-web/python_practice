@@ -245,4 +245,62 @@
 #     for f in range(8):
 #         pen.forward(10)
 # turtle.done
-print("This is just for testing the git push and the git pull")
+# print("This is just for testing the git push and the git pull")
+# **********************************************************************************************************************
+# *************************************** Find pattern 007 in sequence ***************************************
+# def find_pattern(*numbers):
+#     i = 0
+#     numbers_list = [*numbers]
+#     print(numbers_list)
+#     while i < len(numbers_list):
+#         if numbers_list[i] == 0 and numbers_list[i+1] == 0 and numbers_list[i+2] == 7:
+#             print("The list contains the pattern.")
+#             break
+#         i += 1
+#     else:
+#         print("The list doesn't contain the pattern!!")
+#
+#
+# find_pattern(1, 5, 0, 0, 7)
+# **********************************************************************************************************************
+# *************************************** Draw a donut using turtle library ***************************************
+
+inputted_text = input("Enter the text you want to check:> ")
+
+
+def check_consecutive_duplicate(text):
+    words_list = text.split(" ")
+    i = 0
+    for word in words_list:
+        if i != len(words_list) - 1:
+            if words_list[i] == words_list[i+1]:
+                words_list.remove(words_list[i])
+            else:
+                i += 1
+        else:
+            continue
+    else:
+        final_text = " ".join([str(final_words) for final_words in words_list])
+        print(final_text)
+
+
+check_consecutive_duplicate(inputted_text)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
