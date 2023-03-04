@@ -265,29 +265,45 @@
 # **********************************************************************************************************************
 # *************************************** Draw a donut using turtle library ***************************************
 
-inputted_text = input("Enter the text you want to check:> ")
+# inputted_text = input("Enter the text you want to check:> ")
+#
+#
+# def check_consecutive_duplicate(text):
+#     words_list = text.split(" ")
+#     i = 0
+#     for word in words_list:
+#         if i != len(words_list) - 1:
+#             if words_list[i] == words_list[i+1]:
+#                 words_list.remove(words_list[i])
+#             else:
+#                 i += 1
+#         else:
+#             continue
+#     else:
+#         final_text = " ".join([str(final_words) for final_words in words_list])
+#         print(final_text)
+#
+#
+# check_consecutive_duplicate(inputted_text)
 
 
-def check_consecutive_duplicate(text):
-    words_list = text.split(" ")
+def add_white_space(text, x):
     i = 0
+    result = ""
+    words_list = text.split(" ")
     for word in words_list:
-        if i != len(words_list) - 1:
-            if words_list[i] == words_list[i+1]:
-                words_list.remove(words_list[i])
-            else:
-                i += 1
-        else:
-            continue
+        result += word
+        while i <= x:
+            result += " "
+            i += 1
     else:
-        final_text = " ".join([str(final_words) for final_words in words_list])
-        print(final_text)
+        print(result)
 
 
-check_consecutive_duplicate(inputted_text)
+inputted_text = input("Enter you text:> ")
+inputted_number = int(input("Enter the amount of white space you want to add:> "))
 
-
-
+add_white_space(inputted_text, inputted_number)
 
 
 
